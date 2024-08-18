@@ -87,7 +87,6 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
 
 ## **Estructura del Proyecto**
 
-    ```
     todo-api-backend/
     │
     ├── app/
@@ -106,4 +105,4 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
     ├── main.py
     ├── requirements.txt
     └── README.md
-    ```
+
