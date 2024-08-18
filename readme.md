@@ -8,10 +8,8 @@ Un backend para una aplicación de gestión de tareas (Todo) desarrollado con Fa
 - [Tecnologías](#tecnologías)
 - [Características](#características)
 - [Instalación](#instalación)
-- [Uso](#uso)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ## **Descripción**
 
@@ -46,19 +44,64 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
 
 ### **Pasos para la Instalación**
 
-1. **Clonar el Repositorio**
+1.  **Clonar el Repositorio**
 
-   ```bash
-   git clone https://github.com/tu_usuario/todo-api-backend.git
-   cd todo-api-backend
-   ```
+    ```bash
+    git clone https://github.com/tu_usuario/todo-api-backend.git
+    cd todo-api-backend
+    ```
 
-2. **Clonar el Repositorio**
+2.  **Clonar el Repositorio**
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Para Linux/Mac
-   venv\Scripts\activate  # Para Windows
-   ```
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Para Linux/Mac
+    venv\Scripts\activate  # Para Windows
+    ```
 
-3. **Instalar Dependencias**
+3.  **Instalar Dependencias**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Configurar Variables de Entorno**
+    Crea un archivo '.env' en la raíz del proyecto con el siguiente contenido:
+
+        ```bash
+        DATABASE_URL=mysql+pymysql://usuario:contraseña@localhost/todo_db
+        SECRET_KEY=tu_clave_secreta
+        ALGORITHM=HS256
+        ```
+
+    Reemplaza 'usuario', 'contraseña' y 'todo_db' con tus credenciales de MySQL.
+
+5.  **Crear la Base de Datos**
+    Ejecuta el servidor para crear las tablas en la base de datos.
+
+        ```bash
+        fastapi dev
+        ```
+
+## **Estructura del Proyecto**
+
+    ```bash
+    todo-api-backend/
+    │
+    ├── app/
+    │   ├── controllers/
+    │   │   ├── auth_controller.py
+    │   │   └── todo_controller.py
+    │   ├── database.py
+    │   ├── models.py
+    │   ├── routers/
+    │   │   ├── auth.py
+    │   │   └── todo.py
+    │   ├── schemas.py
+    │   └── settings.py
+    │
+    ├── .env
+    ├── main.py
+    ├── requirements.txt
+    └── README.md
+    ```
