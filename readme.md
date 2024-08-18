@@ -66,22 +66,24 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
     ```
 
 4.  **Configurar Variables de Entorno**
-    Crea un archivo '.env' en la raíz del proyecto con el siguiente contenido:
 
-        ```bash
-        DATABASE_URL=mysql+pymysql://usuario:contraseña@localhost/todo_db
-        SECRET_KEY=tu_clave_secreta
-        ALGORITHM=HS256
-        ```
+Crea un archivo '.env' en la raíz del proyecto con el siguiente contenido:
 
-    Reemplaza 'usuario', 'contraseña' y 'todo_db' con tus credenciales de MySQL.
+    ```bash
+    DATABASE_URL=mysql+pymysql://usuario:contraseña@localhost/todo_db
+    SECRET_KEY=tu_clave_secreta
+    ALGORITHM=HS256
+    ```
+
+Reemplaza 'usuario', 'contraseña' y 'todo_db' con tus credenciales de MySQL.
 
 5.  **Crear la Base de Datos**
-    Ejecuta el servidor para crear las tablas en la base de datos.
 
-        ```bash
-        fastapi dev
-        ```
+Ejecuta el servidor para crear las tablas en la base de datos.
+
+    ```bash
+    fastapi dev
+    ```
 
 ## **Estructura del Proyecto**
 
