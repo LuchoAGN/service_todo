@@ -47,8 +47,8 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
 1.  **Clonar el Repositorio**
 
     ```bash
-    git clone https://github.com/tu_usuario/todo-api-backend.git
-    cd todo-api-backend
+    git clone https://github.com/LuchoAGN/service_todo.git
+    cd service_todo
     ```
 
 2.  **Clonar el Repositorio**
@@ -87,7 +87,7 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
 
 ## **Estructura del Proyecto**
 
-    todo-api-backend/
+    service_todo/
     │
     ├── app/
     │   ├── controllers/
@@ -106,3 +106,12 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
     ├── requirements.txt
     └── README.md
 
+## **Contribución**
+
+¡Las contribuciones son bienvenidas! Si deseas contribuir, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+3. Realiza tus cambios y haz commits (git commit -am 'Añadir nueva funcionalidad').
+4. Haz push a la rama (git push origin feature/nueva-funcionalidad).
+5. Abre un Pull Request en GitHub.
