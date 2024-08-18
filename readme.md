@@ -75,7 +75,7 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
     ALGORITHM=HS256
     ```
 
-Reemplaza 'usuario', 'contraseña' y 'todo_db' con tus credenciales de MySQL.
+    Reemplaza 'usuario', 'contraseña' y 'todo_db' con tus credenciales de MySQL.
 
 5.  **Crear la Base de Datos**
 
