@@ -87,7 +87,7 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
 
 ## **Estructura del Proyecto**
 
-    ```bash
+    ```
     todo-api-backend/
     │
     ├── app/
