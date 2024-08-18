@@ -11,7 +11,10 @@ class TodoBase(BaseModel):
 
 # Esquema para Crear Todo
 class TodoCreate(TodoBase):
-    pass
+    title: str
+    description: str
+    is_completed: bool = Field(default=False)
+    due_date: date
 
 # Esquema para Actualizar Todo
 class TodoUpdate(TodoBase):
@@ -21,6 +24,7 @@ class TodoUpdate(TodoBase):
 class Todo(TodoBase):
     id: int
     created_at: datetime
+    is_completed: bool = Field(default=False)
     updated_at: datetime
 
     class Config:
