@@ -67,7 +67,7 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
 
 4.  **Configurar Variables de Entorno**
 
-Crea un archivo '.env' en la raíz del proyecto con el siguiente contenido:
+    Crea un archivo '.env' en la raíz del proyecto con el siguiente contenido:
 
     ```bash
     DATABASE_URL=mysql+pymysql://usuario:contraseña@localhost/todo_db
@@ -79,7 +79,7 @@ Reemplaza 'usuario', 'contraseña' y 'todo_db' con tus credenciales de MySQL.
 
 5.  **Crear la Base de Datos**
 
-Ejecuta el servidor para crear las tablas en la base de datos.
+    Ejecuta el servidor para crear las tablas en la base de datos.
 
     ```bash
     fastapi dev
