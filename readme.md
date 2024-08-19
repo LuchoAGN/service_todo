@@ -72,6 +72,7 @@ Este proyecto es un backend para una aplicación de gestión de tareas. Proporci
     ```bash
     DATABASE_URL=mysql+pymysql://usuario:contraseña@localhost/todo_db
     SECRET_KEY=tu_clave_secreta
+    ACCESS_TOKEN_EXPIRE_MINUTES=30
     ALGORITHM=HS256
     ```
 
